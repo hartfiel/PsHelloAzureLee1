@@ -24,6 +24,7 @@ namespace PsHelloAzureLee1.Controllers
         public IActionResult Index()
         {
             var model = _configuration["Greeting"];
+            ViewBag.Title = "STAGING";
             return View("Index", model);
         }
 
